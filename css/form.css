@@ -1,0 +1,36 @@
+form input{
+    text-align: left;
+    justify-content: center;
+    width: 90%;
+    
+}
+h1{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+h2{
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+form button{
+    border: none;
+    background-color: rgb(42, 42, 240);
+    padding: 12px;
+    border-radius: 5px;
+    width: 90%;
+    color: white;
+}
+form{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.form{
+    width: 500px;
+    height: 80vh;
+    box-shadow: 2px 2px 2px 2px;
+    margin-left: 700px;
+}
