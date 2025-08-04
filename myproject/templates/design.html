@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="../css/design..css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navleft">
+        <h1>SHOPLANE</h1>
+
+        <div class="navheading">
+        <a href="../html/clothing.html"><h2>CLOTHINGS</h2></a>
+        <a href="../html/accessories.html"><h2>ACCESSORIES</h2></a>
+        </div>
+        </div>
+
+        <div class="navmiddle">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text"id="search items"search items="search items"placeholder="search items">
+        </div>
+
+        <div class="navright">
+        <a href="../html/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="../html/userlogin.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        
+    </nav>
+
+    <div class="topimg">
+        <img src="../assets/360_F_.jpg"alt="">
+    </div>
+
+    <h3>Clothing for men and women</h3>
+
+
+    <div class="cardtop">
+
+        <div class="card">
+        <img src="../assets/men white.avif" alt="">
+        <p>men white shirt and pant</p>
+        <p>Rs.999</p>
+        <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/girl dress.avif" alt="">
+            <p>girl jeansshirt and pant</p>
+            <p>Rs.1499</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/girl white.avif" alt="">
+            <p>girls white shirt </p>
+            <p>Rs.699</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/tshirt.jpg" alt="">
+            <p>men tshirt</p>
+            <p>Rs.399</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/whiteshirt.avif" alt="">
+            <p>men white shirt</p>
+            <p>Rs.499</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/women tshirt.webp" alt="">
+            <p>women tshirt</p>
+            <p>Rs.799</p>
+            <button>add to cart</button>
+        </div>
+
+    </div>
+
+    <h3>Accessories for men and women</h3>
+
+     <div class="cardtop">
+
+        <div class="card">
+            <img src="../assets/air buds.jpg" alt="">
+            <p>troop airbuds</p>
+            <p>Rs.599</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/android watch.webp" alt="">
+            <p>men android watch</p>
+            <p>Rs.1499</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/band watch.png" alt="">
+            <p>band watch for men</p>
+            <p>Rs.999</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/boom.webp" alt="">
+            <p>Boom headphone</p>
+            <p>Rs.1999</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/watch.webp" alt="">
+            <p>metal watch for men </p>
+            <p>Rs.899</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/women watch.webp" alt="">
+            <p>women watches</p>
+            <p>Rs.899</p>
+            
+<button>
+    <span>add to cart</span>
+</button>
+            
+        </div>
+
+    </div>
+              <div id="your-cart">
+              <p> Cart is empty</p>
+              <button type="button" onclick="gotocart()">gotocart</button>
+             </div>
+
+                 <footer>
+        <div class="leftfooter">
+            <p>Online shop</p>
+            <p>Rating</p>
+            <p>e-mail</p>
+            <p>made in india</p>
+        </div>
+
+        <div class="middlefooter">
+            <p>Address</p>
+            <p>11/28,middle street</p>
+            <p>Andra Pradesh</p>
+            <p>839 208</p>
+        </div>
+
+        <div class="rightfooter">
+            <p>Contact</p>
+            <p>89839 87690</p>
+            <p>myproduct@gmail.com</p>
+            <p></p><i class="fa-brands fa-instagram"></i> @myproduct</p>
+        </div>
+    </footer>
+
+        <script>
+        let cartitems = JSON.parse(localStorage.getItem("cart")) || [];
+
+        function addtocart(image, name, price) {
+            cartitems.push({ image, name, price: Number(price) });
+            localStorage.setItem("cart", JSON.stringify(cartitems));
+            alert(`${name} has been added to your cart!`);
+            updatecart();
+        }
+
+        function updatecart() {
+            let cart = document.getElementById("your-cart");
+            if (cartitems.length === 0) {
+                cart.innerHTML = '<p>Cart is empty</p><button type="button" onclick="gotocart()">gotocart</button>';
+                return;
+            }
+            let total = 0;
+            let html = '';
+            cartitems.forEach(item => {
+                html += `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="${item.name}" style="width: 80px; height: 80px;">
+                        <span>${item.name} - Rs.${item.price}</span>
+                    </div>
+                `;
+                total += item.price;
+            });
+            html += `<div class="cart-total"><strong>Total: Rs.${total}</strong></div>`;
+            html += `<button type="button" onclick="gotocart()">gotocart</button>`;
+            cart.innerHTML = html;
+        }
+
+        function gotocart() {
+            window.location.href = "cart.html";
+        }
+
+        // Attach addtocart to all "add to cart" buttons
+        document.addEventListener("DOMContentLoaded", function () {
+            // For clothing cards
+            document.querySelectorAll('.cardtop:nth-of-type(1) .card').forEach(card => {
+                let btn = card.querySelector('button');
+                let img = card.querySelector('img').getAttribute('src');
+                let name = card.querySelectorAll('p')[0].innerText;
+                let price = card.querySelectorAll('p')[1].innerText.replace(/\D/g, '');
+                btn.onclick = function () {
+                    addtocart(img, name, price);
+                };
+            });
+            // For accessories cards
+            document.querySelectorAll('.cardtop:nth-of-type(2) .card').forEach(card => {
+                let btn = card.querySelector('button');
+                let img = card.querySelector('img').getAttribute('src');
+                let name = card.querySelectorAll('p')[0].innerText;
+                let price = card.querySelectorAll('p')[1].innerText.replace(/\D/g, '');
+                btn.onclick = function () {
+                    addtocart(img, name, price);
+                };
+            });
+            updatecart();
+        });
+        </script>
+
+   
+
+    
+           
+                
+
+    
+</body>
+</html>

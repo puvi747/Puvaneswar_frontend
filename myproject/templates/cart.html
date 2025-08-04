@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+
+    <div class="all">
+
+    <div class="allcards">
+
+        <div class="top">
+        <h2>Shopping Cart</h2>
+        </div>
+
+        <div class="card">
+            
+            <div class="p">
+            <p></p>
+            <p></p>
+            </div>
+            <div class="button">
+            <button></button>
+            </div>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            
+            <div class="p">
+            <p></p>
+            <p></p>
+            </div>
+            <div class="button">
+            <button></button>
+            </div>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="card">
+            
+            <div class="p">
+            <p></p>
+            <p></p>
+            </div>
+            <div class="button">
+            <button></button>
+            </div>
+            <p></p>
+            <p></p>
+        </div>
+
+        </div>
+        
+     <div class="right">
+         <h1>Summary</h1>
+         <div class="righttop">
+        <h2>ITEMS 3</h2>
+         <h2>Rs.199</h2>
+         </div>
+         <h3>SHIPPING</h3>
+         <button>Standard Delivery Rs.10</button>
+
+         <h2>GIVE CODE</h2>
+         <input type="text"placeholder="Enter your code">
+         <div class="rightdown">
+         <h2>TOTAL PRICE</h2>
+         <h2>Rs.209</h2>
+         </div>
+         <div class="cob">
+         
+<button class="btn">
+  CHECKOUT
+</button>
+         </div>
+     </div>
+     </div>
+
+
+
+     <div id="cart" id="cart">
+        </div>
+     <div id="backtohome">
+
+     </div>
+     <button type="button" onclick="backtohome()">back to home</button>
+
+     <script>
+        function loadcart() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartDiv = document.getElementById("cart");
+            
+            if(cart.length ===0) {
+                cartDiv.innerHTML ="<p>cart is empty</p>";
+                return;
+            }
+
+            let html = '';
+            let total =0;
+            cart.forEach(item => {
+                html += `<li class="cart-item">
+                    <img src="${item.image}" alt="${item.name}" style="width: 80px; height: 80px;">${item.name} - $${item.price}</li>`;
+                total +=item.price;
+            });
+            html +=`</ul><p><strong>total: $${total}</strong></p>`;
+            cartDiv.innerHTML =html;
+        }   
+            function backtohome() {
+                window.location.href ="design.html";
+            }
+
+            loadcart();
+     </script>
+    
+</body>
+</html>

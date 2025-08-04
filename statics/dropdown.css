@@ -1,0 +1,43 @@
+button{
+    background-color: green;
+    border: none;
+    border-radius: 7px;
+}
+
+button:hover{
+    background-color: pink;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.b a{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    display: block;
+}
+
+.b{
+    display: none;
+}
+
+.a:hover{
+    box-shadow: 8px 5px 8px 5px;
+}
+
+.a:hover .b{
+    display: block;
+}
+.b a:hover{
+    background-color: pink;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+
+}

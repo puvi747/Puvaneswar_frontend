@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="../css/calc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/brands.min.css" integrity="sha512-mXqwRsOznG7CS37KA7CLR1Fc72gfOgp7r8xaVdBKoBKhitcKI/mK+IamtZUf+FAkufXOvVTESu9lPsoQc+kFxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <form>
+        <input type="text"id="firstvalue"firstvalue="firstvalue"placeholder="Enter First Value"><br>
+        <input type="text"id="secondvalue"secondvalue="secondvalue"placeholder="Enter Second Value"><br><br><br>
+    <div class="button">
+    <button type="button" onclick="calculate('-')"><i class="fa-solid fa-minus"></i></button>
+    <button type="button" onclick="calculate('+')"><i class="fa-solid fa-plus"></i></button>
+    <button type="button" onclick="calculate('x')"><i class="fa-solid fa-xmark"></i></button>
+    <button type="button" onclick="calculate('/')"><i class="fa-solid fa-divide"></i></button>
+    </div>
+
+    <div id="result"></div>
+    
+    </form>
+
+    
+
+    <script>
+        function calculate(p){
+            let a=parseFloat(document.getElementById('firstvalue').value);
+            let b=parseFloat(document.getElementById('secondvalue').value);
+            let result=0;
+
+            switch(p){
+                case '-':result=a-b;
+                    break;
+                case '+':result=a+b;
+                    break;
+                case 'x':result=a*b;
+                    break;
+                case '/':result=a/b;
+                    break;
+                    }
+            document.getElementById("result").innerHTML= `result: ${result}`;
+
+        }
+    </script>
+
+    
+</body>
+</html>

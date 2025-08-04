@@ -1,0 +1,37 @@
+nav img{
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+}
+.b{
+
+    justify-content: center;
+    color: rgb(41, 231, 88);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(214, 15, 15);
+}
+.a{
+    justify-content: center;
+}
+.e a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: chartreuse;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.e a:hover{
+    color: blue;
+}
+.b a:hover{
+    color: azure;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="../css/bill.css">
+</head>
+<body>
+
+     <h1>EB BILL</h1>
+
+    <form>
+       
+        <label for="name:">Name:</label><br>
+        <input type="text"id="Name"Name="Name"placeholder="Enter Your Name"><br><br><br>
+
+        <label for="Units">Units</label><br>
+        <input type="text"id="units"Name="units"><br><br><br>
+
+        <button type="button" onclick="calculatebill()">GENERATE BILL</button>
+        <div id="result"></div>
+        </form>
+        <script>
+        function calculatebill() {
+                const units=parseFloat(document.getElementById("units").value);
+                let bill=0;
+                if(units<=100){ 
+                    bill=units * 1.5; 
+                }
+                else if(units<=200){
+                    bill=100 * 1.5+ (units - 100) * 2.5;
+                }
+                else if(units<=300){
+                    bill=100 * 1.5 + 100 * 2.5 + (units - 200) * 4;
+                }
+                else if(units>300){
+                    bill=100 * 1.5 + 100 * 2.5 + 100 * 4 + (units - 300) * 6;
+                }
+                document.getElementById('result').innerHTML=`Total EB BILL Rs. ${bill.toFixed(2)}`;
+            }
+        </script>
+</body>
+</html>

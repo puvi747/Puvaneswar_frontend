@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.all{
+    height: 100vh;
+    background-color: rgba(228, 199, 199, 0.699);
+    justify-content: space-between;
+    display: flex;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    padding-left: 30px;
+}
+.card{
+    background-color: white;
+    display: flex;
+    height: 280px;
+    width: 227%;
+    margin-bottom: 2px;
+    color: black;
+    align-items: center;
+    box-shadow: 1px 1px;
+    justify-content: space-between;
+}
+.top{
+    justify-content: space-between;
+    padding-right: 30px;
+    display: flex;
+}
+.card button{
+    padding: 10px 60px;
+    border: none;
+    color: black;
+    background-color: white;
+}
+.card p{
+     padding-right: 30px;
+}
+.p p{
+    padding: 2px;
+}
+.right{
+    width: 25%;
+    background-color: rgba(241, 216, 216, 0.699);
+    padding: 30px;
+    text-align: left;
+    margin-top: 60px;
+    justify-content: space-evenly
+}
+button{
+    padding: 12px 140px;
+    border: none;
+    justify-content: space-between;
+    background-color: white;
+}
+button:hover{
+    background-color: rgb(223, 33, 65);
+    transition: transform 0.5ms;
+    color: white;
+    padding: 20px 140x;
+    transform: scale3d(1.1,1.1,1.1);
+}
+span{
+    display: inline-block;
+    transform: scale3d(1.1,1.1,1.1);
+}
+input{
+    width: 420px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border: none;
+}
+.right h1{
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.righttop{
+    display: flex;
+    justify-content: space-between;
+}
+.rightdown{
+    display: flex;
+    justify-content: space-between;
+}
+.right h2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.btn{
+  padding: 15px 170px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}

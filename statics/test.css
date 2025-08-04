@@ -1,0 +1,114 @@
+nav{
+    display: flex;
+    justify-content: space-between; 
+    background-color: beige;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+nav img{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+}
+form{
+    background-color: lightslategray;
+    width: 400px;
+    text-align: center;
+    margin-left: 740px;
+    padding: 20px;
+    height: 180px;
+}
+.button{
+    text-align: center;
+    padding: 10px;
+}
+.cardcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: lightslategrey;
+    gap: 60px;
+    padding: 60px;
+    box-shadow: 8px 10px 8px 10px;
+}
+.card{
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 8px 10px 8px 10px;
+    height: 80vh;
+}
+.card p{
+    padding: 20px;
+    text-align: left;
+}
+.card img{
+    padding-top: 20px;
+    width: 90%;
+    height: 40vh;
+    border-radius: 5px;
+}
+.card button{
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(74, 74, 224);
+    padding: 15px 40px;
+    border: none;
+    margin-bottom: 5px;
+}
+.card button:hover{
+    background-color: rgb(21, 21, 173);
+}
+table{
+    width: 100%;
+    background-color: black;
+}
+th,td{
+    text-align: center;
+    padding: 15px;
+}
+thead{
+    background-color: lightgoldenrodyellow;
+}
+tbody{
+    background-color: blanchedalmond;
+}
+th,td:hover{
+    background-color: gray;
+}
+.b{
+    display: none;
+    text-decoration: none;
+}
+.a button{
+    background-color: lightcoral;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 7px;
+}
+.a:hover .b{
+    display: block;
+}
+.b a{
+    display: block;
+    text-decoration: none;
+}
+.b a:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+footer{
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+}
+.card:hover{
+    background-color: cornsilk;
+}

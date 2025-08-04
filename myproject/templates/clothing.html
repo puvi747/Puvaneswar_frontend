@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="../css/clothing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <nav>
+        <div class="navleft">
+        <h1>SHOPLANE</h1>
+
+        <div class="navheading">
+        <h2>CLOTHINGS</h2>
+        <a href="../html/accessories.html"><h2>ACCESSORIES</h2></a>
+        </div>
+        </div>
+
+        <div class="navmiddle">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text"id="search items"search items="search items"placeholder="search items">
+        </div>
+
+        <div class="navright">
+        <a href="../html/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="../html/userlogin.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        
+    </nav>
+
+    <h3>Clothing for men and women</h3>
+
+    
+
+
+    <div class="cardtop">
+
+        <div class="card">
+        <img src="../assets/men white.avif" alt="">
+        <p>men white shirt and pant</p>
+        <p>Rs.999</p>
+        
+<button>
+    <span>add to cart</span>
+</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/girl dress.avif" alt="">
+            <p>girl jeansshirt and pant</p>
+            <p>Rs.1499</p>
+            <button class="button" onclick="addtocart('assets/girl dress.avif','jeansshirt and pant',1499)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/girl white.avif" alt="">
+            <p>girls white shirt </p>
+            <p>Rs.699</p>
+            <button class="button" onclick="addtocart('assets/girl white.avif','girls white shirt',699)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/tshirt.jpg" alt="">
+            <p>men tshirt</p>
+            <p>Rs.399</p>
+            <button class="button" onclick="addtocart('assets/tshirt.jpg','men tshirt',399)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/whiteshirt.avif" alt="">
+            <p>men white shirt</p>
+            <p>Rs.499</p>
+            <button class="button" onclick="addtocart('assets/whiteshirt.avif','men white shirt',499)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/women tshirt.webp" alt="">
+            <p>women tshirt</p>
+            <p>Rs.799</p>
+            <button class="button" onclick="addtocart('assets/women tshirt.webp','women tshirt',799)">add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="cardtop">
+
+        <div class="card">
+        <img src="../assets/jacket.webp" alt="">
+        <p>JACKET FOR MENS</p>
+        <p>Rs.3999</p>
+        <button class="button" onclick="addtocart('assets/jacket.webp','JACKET FOR MENS',3999)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/JACKE FOR WOMEN.webp" alt="">
+            <p>JACKET FOR girl</p>
+            <p>Rs.3999</p>
+            <button class="button" onclick="addtocart('assets/JACKE FOR WOMEN.webp','JACKET FOR WOMEN',3999)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/TSHIRT 1.jpg" alt="">
+            <p>T-SHIRT MEN</p>
+            <p>Rs.1099</p>
+            <button class="button" onclick="addtocart('assets/TSHIRT 1.jpg','T-SHIRT MEN',1099)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/SHIRT 1.webp" alt="">
+            <p>BLACK SHIRT FOR MEN</p>
+            <p>Rs.1499</p>
+            <button class="button" onclick="addtocart('assets/SHIRT 1.webp','BLACK SHIRT FOR MEN',1499)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/WOM SHIRT 1.webp" alt="">
+            <p>WOMEN SHIRT</p>
+            <p>Rs.1999</p>
+            <button class="button" onclick="addtocart('assets/WOM SHIRT 1.webp','WOMEN SHIRT',1999)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/WOM COMBO1.webp" alt="">
+            <p>COMBO T-SHIRTS WOMEN</p>
+            <p>Rs.2499</p>
+            <button class="button" onclick="addtocart('assets/WOM COMBO1.webp','COMBO T-SHIRTS WOMEN',2499)">add to cart</button>
+        </div>
+
+    </div>
+
+    <div class="cardtop">
+
+        <div class="card">
+        <img src="../assets/lycra.webp" alt="">
+        <p>JACKET SHIRT FOR MENS</p>
+        <p>Rs.899</p>
+        <button class="button" onclick="addtocart('assets/lycra.webp','JACKET SHIRT FOR MENS',899)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/polyster.webp" alt="">
+            <p>POLYSTER T-SHIRT</p>
+            <p>Rs.899</p>
+            <button class="button" onclick="addtocart('assets/polyster.webp','POLYSTER T-SHIRT',899)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/hirl jeans.webp" alt="">
+            <p>JEAN FOR GIRLS</p>
+            <p>Rs.1799</p>
+            <button class="button" onclick="addtocart('assets/hirl jeans.webp','JEAN FOR GIRLS',1799)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/JACKET WOMEN.jpg" alt="">
+            <p>JACKET FOR WOMEN</p>
+            <p>Rs.2499</p>
+            <button class="button" onclick="addtocart('assets/JACKET WOMEN.jpg','JACKET FOR WOMEN',2499)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/PRINTED SHIRT.webp" alt="">
+            <p>PRINTED SHIRT FOR MEN</p>
+            <p>Rs.999</p>
+            <button class="button" onclick="addtocart('assets/PRINTED SHIRT.webp','PRINTED SHIRT FOR MEN',999)">add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../assets/SAREE.jpg" alt="">
+            <p>WOMEN SAREE</p>
+            <p>Rs.2499</p>
+            <button class="button" onclick="addtocart('assets/SAREE.jpg','WOMEN SAREE',2499)">add to cart</button>
+        </div>
+
+    </div>
+           <div id="your cart">
+            <p> Cart is empty</p>
+            <button type="button" onclick="gotocart()">go to cart</button>
+           </div>
+
+          <script>
+                let cartitems = [];
+                function addtocart(image, name, price) {
+                    cartitems.push({image, name, price: Number(price)});
+                    updatecart();
+                }
+                function updatecart() {
+                    let cart = document.getElementById("your cart");
+                    if (cartitems.length === 0) {
+                        cart.innerHTML = 'cart is empty';
+                        return;
+                    }
+                    let total = 0;
+                    let html = '';
+                    cartitems.forEach(item  => {
+                        html += `
+                            <div class="cart-item">
+                                <img src="../${item.image}" alt="${item.name}" style="width: 200px; height: 200px;">
+                                <span>${item.name} - $${item.price}</span>
+                            </div>
+                        `;
+                    total += item.price;
+                        });
+                        html += `<div class="cart-total"><strong>Total: $${total}</strong></div>`;
+                        cart.innerHTML = html;
+                    }
+        
+                </script>
+</body>
+</html>
